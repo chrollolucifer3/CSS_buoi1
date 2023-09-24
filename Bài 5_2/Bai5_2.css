@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+p{
+    font-weight: 400;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+#fs-top{
+    padding: 5px;
+    background: #fff;
+    margin-bottom: 0;
+    text-align: center;
+    color: #ff001f;
+}
+
+#fs-top p{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.fs-button{
+    display: inline-block;
+    vertical-align: middle;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    margin-left: 6px;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #2183f6;
+    text-decoration: none;
+}
+
+.fs-header-top{
+    background: #cd1818;
+    height: 56px;
+}
+
+.fs-wrap{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fs-logo{
+    height: 100%;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.search>form>input{
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-size: 14px;
+    padding: 0 60px 0 10px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.search{
+    display: inline-block;
+}
+
+.search>form>button i{
+    color: #fff ;
+}
+
+.search>form>button{
+    width: 58px;
+    height: 38px;
+    top: 0;
+    right: 0;
+    border: none;
+    background: #333;
+    border-radius: 0 2px 2px 0;
+    position: absolute;
+}
+
+.search>form{
+    width: 496px;
+    position: relative;
+}
+
+.fs-menu-top li{
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+
+.fs-menu-top li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fs-menu-top .icon{
+    text-align: center;
+}
+
+.fs-wrap .submenu{
+    position: absolute;
+    visibility:hidden;
+    opacity:0;
+    width: 200px;
+    background-color: rgba(255, 255, 255);
+    top: 50px;
+    left: -10px;
+    box-shadow:  1px 1px 5px rgb(27, 80, 27, 0.2);
+    padding: 5px;
+    z-index: 11;
+}
+
+.fs-menu-top li:hover>.submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu li{
+    display: block;
+}
+
+.submenu li a{
+    color: #646464;
+}
+
+.submenu li:hover>a{
+    color: black;
+}
+
+.fs-header-bot{
+    background-color: black;
+}
+
+.fs-wrap-bot, .main-wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.fs-wrap-bot a{
+    font-size: 14px;
+}
+
+.fs-wrap-bot>ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fs-wrap-bot .submenu{
+    position: absolute;
+    visibility:hidden;
+    opacity:0;
+    width: 200px;
+    background-color: rgba(255, 255, 255);
+    top: 33px;
+    box-shadow:  1px 1px 5px rgb(27, 80, 27, 0.2);
+    padding: 5px;
+    z-index: 11;
+}
+
+.main-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture{
+    position: relative;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    width: 95px;
+    height: 95px;
+    display: inline-flex;
+    -webkit-box-pack: center;
+}
+
+.picture img{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+.item{
+    padding: 15px;
+    border-right: 2px solid rgba(0,0,0,.09);
+    border-bottom: 2px solid rgba(0,0,0,.09);
+    -o-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    flex-basis: calc(100% / 6);
+    width: calc(100% / 6);
+    text-align: center;
+}
+
+.item:hover{
+    box-shadow:  1px 1px 5px rgb(27, 80, 27, 0.2);
+}
+
+.banner-sale{
+    margin-top: 20px;
+}
+
+.sale-oppo{
+    margin-top: 20px;
+    padding: 20px 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 #0a0a0a26;
+    border-radius: 6px;
+}
+
+li{
+    list-style: none;
+}
+
+.list-oppo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-redmi{
+    margin-top: 20px;
+    box-shadow: 0 1px 4px 0 #0a0a0a26;
+    border-radius: 6px;
+}
+
+.banner-redmi img{
+    border-radius: 6px;
+}
+
+.service{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.img-srvice{
+    box-shadow: 0 1px 4px 0 #0a0a0a26;
+    border-radius: 6px;
+}
+
+.img-srvice img{
+    border-radius: 6px;
+}
+
